@@ -26,7 +26,7 @@ public class TriangleWorker implements Callable<Set<Triple>> {
         Set<Triple> tripleSet = new HashSet<>();
         for (int i = 1; i < p/2; i++) {
             for (int j = 1; j < p/2; j++) {
-                for (int k = 1; k < p/2; k++) {
+                for (int k = 1; k < p/2 ; k++) {
                     if(i * i + j * j == k * k && i + j + k == p) {
                         tripleSet.add(new Triple(p, i, j, k));
                     }
